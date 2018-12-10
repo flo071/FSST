@@ -1,5 +1,7 @@
-public class Lehrer {
-	public static void main(String[] args) {
-		//TODO: Start some method here
+public class Lehrer extends Mitarbeiter{
+	private String kuerzel;
+
+	public String getKuerzel() {
+		return kuerzel;
 	}
 }
