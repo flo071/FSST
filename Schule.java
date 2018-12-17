@@ -1,5 +1,16 @@
+import java.util.*;
+
 public class Schule {
-	public static void main(String[] args) {
-		//TODO: Start some method here
+	private String schulname;
+	private String schulkennzahl;
+	private String schultyp;
+	private boolean Lehrpersonal;
+
+	public boolean addPersonal() {
+		//return boolean NichtLehrpersonal personal
+	}
+
+	public Abteilung addAbteilung() {
+		return Abteilung;
 	}
 }
