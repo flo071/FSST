@@ -6,8 +6,7 @@ public class Schueler extends Person {
 	private boolean eigenberechtigt;
 	private LocalDate eintrittsdatum;
 
-	public Schueler(long svnr, String vorname, String nachname, LocalDate geburtsdatumm, String email, int katalognummer, LocalDate eintritsdatum)
-	{
+	public Schueler(long svnr, String vorname, String nachname, LocalDate geburtsdatumm, String email, int katalognummer, LocalDate eintritsdatum){
 		super(svnr,vorname,nachname,geburtsdatumm,email);
 
 		this.katalognummer = katalognummer;

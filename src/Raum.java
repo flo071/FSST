@@ -32,8 +32,7 @@ public class Raum {
                 if(jetzt != null){
                     System.out.println(jetzt.getFach().getName());
                     System.out.print(jetzt.getLehrer().getKuerzel());
-                }
-                else{
+                } else{
                     System.out.println("Fehler, bitte ereut versuchen.");
                 }
             }

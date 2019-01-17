@@ -7,8 +7,7 @@ public class Person {
 	private LocalDate geburtsdatum;
 	private String email;
 
-	public Person(long svnr, String vorname, String nachname,
-				  LocalDate geburtsdatumm, String email){
+	public Person(long svnr, String vorname, String nachname, LocalDate geburtsdatumm, String email){
 		this.svnr = svnr;
 		this.vorname = vorname;
 		this.nachname = nachname;

@@ -28,10 +28,8 @@ public class Schule {
         return schultyp;
     }
 
-    public boolean setDirektor(Lehrer lehrer)
-    {
-        for(Abteilung abteilung : abteilungen)
-        {
+    public boolean setDirektor(Lehrer lehrer){
+        for(Abteilung abteilung : abteilungen){
             if(abteilung.getAbteilungsvorstand() == lehrer)
                 return false;
         }
@@ -41,15 +39,13 @@ public class Schule {
 
     public ArrayList<Schueler> getSchueler() {
         ArrayList<Schueler> schueler = new ArrayList<Schueler>();
-        for(Abteilung abteilung : getAbteilungen())
-        {
+        for(Abteilung abteilung : getAbteilungen()){
             schueler.addAll(abteilung.getSchueler());
         }
         return schueler;
     }
 
-    public int getAnzahlSchueler()
-    {
+    public int getAnzahlSchueler(){
         return getSchueler().size();
     }
 }
