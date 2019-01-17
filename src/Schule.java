@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.ArrayList;
 
 public class Schule {
 	private String schulname;
@@ -6,11 +6,25 @@ public class Schule {
 	private String schultyp;
 	private boolean Lehrpersonal;
 
-	public boolean addPersonal() {
+	private ArrayList<Abteilung> abteilungen;
+
+	public boolean addPersonal(NichtLehrpersonal personal) {
 		//return boolean NichtLehrpersonal personal
 	}
 
-	public Abteilung addAbteilung() {
-		return Abteilung;
+	public Abteilung addAbteilung(String name, String kuerzel) {
+		return abteilungen.add(new Abteilung(name, kuerzel, this))
 	}
+
+	public Long getSchulkennzahl() {
+        return schulkennzahl;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSchultyp() {
+        return schultyp;
+    }
 }
