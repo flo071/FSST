@@ -38,4 +38,21 @@ public class Abteilung {
         }
         return schueler;
     }
+
+    public boolean addLehrer(Lehrer lehrer){
+        return this.lehrer.add(lehrer);
+    }
+
+    public boolean setAbteilungsvorstand(Lehrer lehrer){
+        if(schule.getDirektor() == lehrer)
+            return false;
+        
+        for(Abteilung abteilung : schule.getAbteilungen()){
+            if(abteilung.getAbteilungsvorstand() == lehrer)
+                return false;
+        }
+        
+        abteilungsvorstand = lehrer;
+        return true;
+    }
 }
