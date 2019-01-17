@@ -1,5 +1,7 @@
 public class Belegung {
-	public static void main(String[] args) {
-		//TODO: Start some method here
+	private int unterrichtsEinheit;
+
+	public Fach(int unterrichtsEinheit){
+		this.unterrichtsEinheit = unterrichtsEinheit;
 	}
 }
