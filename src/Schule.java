@@ -48,4 +48,8 @@ public class Schule {
     public int getAnzahlSchueler(){
         return getSchueler().size();
     }
+
+    public ArrayList<Mitarbeiter> getPersonal() {
+        return personal;
+    }
 }
