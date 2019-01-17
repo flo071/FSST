@@ -1,3 +1,3 @@
 # FSST
 
-![Alt text](./schule.svg)
+![Alt text](.docs/schule.svg)
