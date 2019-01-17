@@ -26,4 +26,16 @@ public class Abteilung {
 	public String getKuerzel() {
 		return kuerzel;
 	}
+
+	public ArrayList<Klasse> getKlassen() {
+        return klassen;
+    }
+
+    public ArrayList<Schueler> getSchueler() {
+        ArrayList<Schueler> schueler = new ArrayList<Schueler>();
+        for(Klasse klassen : getKlassen()){
+            schueler.addAll(klassen.getSchueler());
+        }
+        return schueler;
+    }
 }
