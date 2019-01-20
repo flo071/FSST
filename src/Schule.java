@@ -24,6 +24,12 @@ public class Schule {
         abteilungen = new ArrayList<>();
     }
 
+    public Schule(String schulname, long schulkennzahl, String schultyp){
+        this.schulname = schulname;
+        this.schulkennzahl = schulkennzahl;
+        this.schultyp = schultyp;
+    }
+
 	public boolean addPersonal(NichtLehrpersonal personal) {
 		return false; //not implemented
 	}
