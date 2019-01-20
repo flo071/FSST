@@ -1,10 +1,10 @@
 import java.time.LocalDate;
-import java.time.Month;
 
 public class HTL {
 	public static void main(String[] args) {
-		test_schueler();
 		test_schule(); 
+		System.out.println();
+		System.out.println("Testing completed!");
 	}
 
 	public static void test_schueler(){
@@ -42,6 +42,8 @@ public class HTL {
 
                 System.out.println(abteilung.getName() + " " + abteilung.getKuerzel());
                 System.out.println("Abteilungsvorstand:" + " " + abteilung.getAbteilungsvorstand().getVorname() + " " + abteilung.getAbteilungsvorstand().getNachname());
+
+                test_schueler();
                 System.out.println();
 
             } else if (abteilung.getName() == "Informatik") {
