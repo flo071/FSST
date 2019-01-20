@@ -55,4 +55,8 @@ public class Abteilung {
         abteilungsvorstand = lehrer;
         return true;
     }
+
+    public Lehrer getAbteilungsvorstand() {
+        return abteilungsvorstand;
+    }
 }

@@ -1,6 +1,13 @@
+import java.util.Set;
+import java.util.TreeSet;
+import java.time.Period;
+import java.time.LocalDate;
+
 public class Klasse {
 	private String bezeichnung;
 	private int schulstufe;
+    private Schueler klassensprecher;
+    private Set<Schueler> schuelerList = new TreeSet<Schueler>();
 
 	public Klasse(int schulstufe, String bezeichnung){
 		this.schulstufe = schulstufe;
@@ -20,8 +27,8 @@ public class Klasse {
         int anzahl = 0;
         LocalDate heute = LocalDate.now();
 
-        for (Schueler s : schueler) {
-            LocalDate geb = s.getGeburtsdatum();
+        for (Schueler schuelerL : schuelerList) {
+            LocalDate geb = schuelerL.getGeburtsdatum();
             alterAlle += Period.between(geb, heute).getYears();
             anzahl++;
         }
@@ -37,6 +44,10 @@ public class Klasse {
     }
 
     public boolean addSchueler(Schueler schueler) {
-        return schueler.add(schueler);
+        return schuelerList.add(schueler);
+    }
+
+    public Set<Schueler> getSchueler() {
+        return schuelerList;
     }
 }

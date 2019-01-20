@@ -1,0 +1,3 @@
+enum Raumtyp {
+    KLASSENZIMMER, LABORRAUM
+}
